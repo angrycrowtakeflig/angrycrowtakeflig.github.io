@@ -14,7 +14,7 @@
 <meta property="og:description" content="https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;111614119 注册好github下载好git并连接到github下 npmhttps:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;105715224 npm config set prefix “D:\nodejs\node_global”npm config set cache “D:\nodejs\node_cache”设置缓存">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-09-28T02:21:13.000Z">
-<meta property="article:modified_time" content="2021-09-28T02:32:25.405Z">
+<meta property="article:modified_time" content="2021-09-28T02:45:41.293Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -113,7 +113,7 @@
 </ul>
 <p>浏览器输入 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> 就可以打开新部署的网页：</p>
 <h1 id="将Hexo部署到GitHub"><a href="#将Hexo部署到GitHub" class="headerlink" title="将Hexo部署到GitHub"></a>将Hexo部署到GitHub</h1><p>现在回到我们的 Blog 文件夹，用笔记本打开 _config.yml 文件</p>
-<p>deploy:<br>  type: git<br>  repository: <a href="mailto:&#103;&#105;&#116;&#x40;&#103;&#105;&#116;&#104;&#x75;&#98;&#x2e;&#99;&#111;&#x6d;">&#103;&#105;&#116;&#x40;&#103;&#105;&#116;&#104;&#x75;&#98;&#x2e;&#99;&#111;&#x6d;</a>:angrycrowtakeflig/angrycrowtakeflig.github.io.git<br>   #你的仓库地址 用ssh地址 我用https一直提交不上仓库<br>  branch: main  # 好像github将仓库主支改成main了建议用main,用master会创建另一个master分支<br><strong>注意空格</strong></p>
+<p>deploy:<br>  type: git<br>  repository: <a href="mailto:&#103;&#105;&#116;&#x40;&#103;&#105;&#116;&#104;&#117;&#98;&#46;&#x63;&#x6f;&#109;">&#103;&#105;&#116;&#x40;&#103;&#105;&#116;&#104;&#117;&#98;&#46;&#x63;&#x6f;&#109;</a>:angrycrowtakeflig/angrycrowtakeflig.github.io.git<br>   #你的仓库地址 用ssh地址 我用https一直提交不上仓库<br>  branch: main  # 好像github将仓库主支改成main了建议用main,用master会创建另一个master分支<br><strong>注意空格</strong></p>
 <p>然后回到 Blog 文件夹中，打开 Git Bash，安装Git部署插件，输入命令：</p>
 <p>npm install hexo-deployer-git –save</p>
 <p>然后分别输入以下三条命令：</p>
@@ -121,6 +121,15 @@
 <p>完成以后，打开浏览器，输入 <a target="_blank" rel="noopener" href="https://xxx.github.io/">https://xxx.github.io</a> 就可以打开你的网页了：xxx为你的账号名字</p>
 <p>可以看github仓库提交进去了不</p>
 <p>不知道要git init 不</p>
+<h1 id="hexo-管理博客"><a href="#hexo-管理博客" class="headerlink" title="hexo 管理博客"></a>hexo 管理博客</h1><h2 id="生成文件"><a href="#生成文件" class="headerlink" title="生成文件"></a>生成文件</h2><ul>
+<li>hexo new [layout] <title><h3 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h3></li>
+<li>hexo new [layout] <title> 生成一个.md文件 在/source/_post/ 文件下</li>
+</ul>
+<p>Hexo  [layout]有三种默认布局：post、page 和 draft（草稿）,缺省为post .在创建这三种不同类型的文件时，它们将会被保存到不同的路径；而您自定义的其他布局和 post 相同，都将储存到 source/_posts 文件夹。</p>
+<p>如果直接把自己的文件放上去在文件前面要加上 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 博客github+hexo.md</span><br><span class="line">date: 2021-09-28 10:21:13</span><br><span class="line">tags:</span><br><span class="line">---</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>否则标题名称不知道</p>
+<p>layout</p>
 
       
     </div>
