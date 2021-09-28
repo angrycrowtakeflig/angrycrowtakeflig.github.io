@@ -71,60 +71,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-博客github+hexo" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/09/28/%E5%8D%9A%E5%AE%A2github+hexo/" class="article-date">
-  <time class="dt-published" datetime="2021-09-28T02:22:04.004Z" itemprop="datePublished">2021-09-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111614119">https://zhuanlan.zhihu.com/p/111614119</a></p>
-<h1 id="注册好github"><a href="#注册好github" class="headerlink" title="注册好github"></a>注册好github</h1><h1 id="下载好git并连接到github"><a href="#下载好git并连接到github" class="headerlink" title="下载好git并连接到github"></a>下载好git并连接到github</h1><h1 id="下-npm"><a href="#下-npm" class="headerlink" title="下 npm"></a>下 npm</h1><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/105715224">https://zhuanlan.zhihu.com/p/105715224</a></p>
-<p>npm config set prefix “D:\nodejs\node_global”<br>npm config set cache “D:\nodejs\node_cache”<br>设置缓存和 module位置</p>
-<p>配置文件 .npmrc 在c:/asus 下</p>
-<h1 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h1><p>hexo 是网页框架<br>在github建仓库 仓库名字为  你的账号名字+github.io</p>
-<p>接下来就是安装Hexo，首先在D盘建立一个文件夹 Blog，点开 Blog 文件夹，鼠标右键打开 Git Bush Here，（不要放c盘，可能会造成权限不够改不了文件）</p>
-<p>输入npm命令安装Hexo：</p>
-<p>npm install -g hexo-cli 安装hexo<br><strong>如果npm hexo命令找不到将npm hexo的路径添加到环境变量</strong><br><strong>系统变量中新建一个变量名为“NODE_PATH”，值为“D:\nodejs\node_global\node_modules”</strong><br><strong>然后编辑用户变量里的Path，将相应npm的路径改为：D:\nodejs\node_global，如下图：</strong><br><strong>hexo的路径为D:\nodejs\node_global\node_modules\hexo-cli\bin</strong></p>
-<ul>
-<li><p>hexo init 命令初始化博客</p>
-</li>
-<li><p>hexo g 静态部署：</p>
-</li>
-<li><p> hexo s 开始网页服务</p>
-</li>
-</ul>
-<p>浏览器输入 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> 就可以打开新部署的网页：</p>
-<h1 id="将Hexo部署到GitHub"><a href="#将Hexo部署到GitHub" class="headerlink" title="将Hexo部署到GitHub"></a>将Hexo部署到GitHub</h1><p>现在回到我们的 Blog 文件夹，用笔记本打开 _config.yml 文件</p>
-<p>deploy:<br>  type: git<br>  repository: <a href="mailto:&#103;&#x69;&#116;&#x40;&#x67;&#105;&#x74;&#x68;&#117;&#98;&#x2e;&#99;&#111;&#109;">&#103;&#x69;&#116;&#x40;&#x67;&#105;&#x74;&#x68;&#117;&#98;&#x2e;&#99;&#111;&#109;</a>:angrycrowtakeflig/angrycrowtakeflig.github.io.git<br>   #你的仓库地址 用ssh地址 我用https一直提交不上仓库<br>  branch: main  # 好像github将仓库主支改成main了建议用main,用master会创建另一个master分支<br><strong>注意空格</strong></p>
-<p>然后回到 Blog 文件夹中，打开 Git Bash，安装Git部署插件，输入命令：</p>
-<p>npm install hexo-deployer-git –save</p>
-<p>然后分别输入以下三条命令：</p>
-<p>hexo clean   #清除缓存文件 db.json 和已生成的静态文件 public<br>hexo g       #生成网站静态文件到默认设置的 public 文件夹(hexo generate 的缩写)<br>hexo d       #自动生成网站静态文件，并部署到设定的仓库(hexo deploy 的缩写)</p>
-<p>完成以后，打开浏览器，输入 <a target="_blank" rel="noopener" href="https://xxx.github.io/">https://xxx.github.io</a> 就可以打开你的网页了：xxx为你的账号名字</p>
-<p>可以看github仓库提交进去了不</p>
-<p>不知道要git init 不</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/28/%E5%8D%9A%E5%AE%A2github+hexo/" data-id="cku3gfssg00015sag8tub7nvp" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
     <article id="post-html" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/09/28/html/" class="article-date">
@@ -153,6 +99,70 @@
     </div>
     <footer class="article-footer">
       <a data-url="http://example.com/2021/09/28/html/" data-id="cku3gfss500005sag5c2u93h4" data-title="html" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-博客github+hexo" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/28/%E5%8D%9A%E5%AE%A2github+hexo/" class="article-date">
+  <time class="dt-published" datetime="2021-09-28T02:21:13.000Z" itemprop="datePublished">2021-09-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/09/28/%E5%8D%9A%E5%AE%A2github+hexo/">博客github+hexo.md</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111614119">https://zhuanlan.zhihu.com/p/111614119</a></p>
+<h1 id="注册好github"><a href="#注册好github" class="headerlink" title="注册好github"></a>注册好github</h1><h1 id="下载好git并连接到github"><a href="#下载好git并连接到github" class="headerlink" title="下载好git并连接到github"></a>下载好git并连接到github</h1><h1 id="下-npm"><a href="#下-npm" class="headerlink" title="下 npm"></a>下 npm</h1><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/105715224">https://zhuanlan.zhihu.com/p/105715224</a></p>
+<p>npm config set prefix “D:\nodejs\node_global”<br>npm config set cache “D:\nodejs\node_cache”<br>设置缓存和 module位置</p>
+<p>配置文件 .npmrc 在c:/asus 下</p>
+<h1 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h1><p>hexo 是网页框架<br>在github建仓库 仓库名字为  你的账号名字+github.io</p>
+<p>接下来就是安装Hexo，首先在D盘建立一个文件夹 Blog，点开 Blog 文件夹，鼠标右键打开 Git Bush Here，（不要放c盘，可能会造成权限不够改不了文件）</p>
+<p>输入npm命令安装Hexo：</p>
+<p>npm install -g hexo-cli 安装hexo<br><strong>如果npm hexo命令找不到将npm hexo的路径添加到环境变量</strong><br><strong>系统变量中新建一个变量名为“NODE_PATH”，值为“D:\nodejs\node_global\node_modules”</strong><br><strong>然后编辑用户变量里的Path，将相应npm的路径改为：D:\nodejs\node_global，如下图：</strong><br><strong>hexo的路径为D:\nodejs\node_global\node_modules\hexo-cli\bin</strong></p>
+<ul>
+<li><p>hexo init 命令初始化博客</p>
+</li>
+<li><p>hexo g 静态部署：</p>
+</li>
+<li><p> hexo s 开始网页服务</p>
+</li>
+</ul>
+<p>浏览器输入 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> 就可以打开新部署的网页：</p>
+<h1 id="将Hexo部署到GitHub"><a href="#将Hexo部署到GitHub" class="headerlink" title="将Hexo部署到GitHub"></a>将Hexo部署到GitHub</h1><p>现在回到我们的 Blog 文件夹，用笔记本打开 _config.yml 文件</p>
+<p>deploy:<br>  type: git<br>  repository: <a href="mailto:&#x67;&#105;&#x74;&#64;&#103;&#x69;&#x74;&#x68;&#117;&#98;&#46;&#x63;&#111;&#109;">&#x67;&#105;&#x74;&#64;&#103;&#x69;&#x74;&#x68;&#117;&#98;&#46;&#x63;&#111;&#109;</a>:angrycrowtakeflig/angrycrowtakeflig.github.io.git<br>   #你的仓库地址 用ssh地址 我用https一直提交不上仓库<br>  branch: main  # 好像github将仓库主支改成main了建议用main,用master会创建另一个master分支<br><strong>注意空格</strong></p>
+<p>然后回到 Blog 文件夹中，打开 Git Bash，安装Git部署插件，输入命令：</p>
+<p>npm install hexo-deployer-git –save</p>
+<p>然后分别输入以下三条命令：</p>
+<p>hexo clean   #清除缓存文件 db.json 和已生成的静态文件 public<br>hexo g       #生成网站静态文件到默认设置的 public 文件夹(hexo generate 的缩写)<br>hexo d       #自动生成网站静态文件，并部署到设定的仓库(hexo deploy 的缩写)</p>
+<p>完成以后，打开浏览器，输入 <a target="_blank" rel="noopener" href="https://xxx.github.io/">https://xxx.github.io</a> 就可以打开你的网页了：xxx为你的账号名字</p>
+<p>可以看github仓库提交进去了不</p>
+<p>不知道要git init 不</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/28/%E5%8D%9A%E5%AE%A2github+hexo/" data-id="cku3gfssg00015sag8tub7nvp" data-title="博客github+hexo.md" class="article-share-link">Share</a>
       
       
       
@@ -246,11 +256,11 @@
       <ul>
         
           <li>
-            <a href="/2021/09/28/%E5%8D%9A%E5%AE%A2github+hexo/">(no title)</a>
+            <a href="/2021/09/28/html/">html</a>
           </li>
         
           <li>
-            <a href="/2021/09/28/html/">html</a>
+            <a href="/2021/09/28/%E5%8D%9A%E5%AE%A2github+hexo/">博客github+hexo.md</a>
           </li>
         
           <li>
